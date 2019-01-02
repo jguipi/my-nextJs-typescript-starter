@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from './Head';
-import '../styles/styles.scss';
+import '../styles/main.scss';
 
 const Header = () => (
 	<header>

@@ -1,0 +1,1 @@
+Folder containing all the CSS files from external libraries and frameworks 

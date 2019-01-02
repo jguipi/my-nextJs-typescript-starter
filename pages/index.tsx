@@ -1,4 +1,4 @@
-import '../styles/styles.scss';
+import '../styles/main.scss';
 import Layout from '../components/MyLayout';
 import axios from 'axios';
 import { i18n, Link, withNamespaces } from '../i18n';
