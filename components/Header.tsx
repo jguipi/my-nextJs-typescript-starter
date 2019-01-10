@@ -3,15 +3,11 @@ import Head from './Head';
 import '../styles/main.scss';
 
 const Header = () => (
-	<header>
-		<div className="fullscreen">
-			<div className="about-button">
-				<button>
-          About
-        </button>
-			</div>
-			<Head />
+	<header className="fullscreen">
+		<div className="about-button">
+			<button>About</button>
 		</div>
+		<Head />
 	</header>
 );
 

@@ -1,12 +1,6 @@
-$font-size: 50px;
-.example {
-  font-size: $font-size;
-}
-
 .fullscreen {
-  background-image: url("http://carterrink.com/assets/images/clouds.jpg");
+  background-image: image( "clouds.jpg");
   height: 100vh;
-  width: 100vw;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
