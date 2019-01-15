@@ -1,4 +1,5 @@
 {
+  "name": "nextJs-typescript-i18n-starter",
   "scripts": {
     "preinstall": "cd ./core && npm install",
     "prestart": "cd ./core && npm run build",
