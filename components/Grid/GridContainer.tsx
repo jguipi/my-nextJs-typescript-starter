@@ -11,10 +11,10 @@ const style = {
 	}
 };
 
-function GridContainer({ justify, alignItems, classes, children, className, ...rest }: Props) {
+function GridContainer({ justify, alignItems, classes, className, ...props }: Props) {
 	return (
 		<Grid container justify={justify} alignItems={alignItems} {...rest} className={classes.grid + ' ' + className}>
-			{children}
+			{props.children}
 		</Grid>
 	);
 }
@@ -25,7 +25,7 @@ interface Props {
 	className?: string;
 	classes: any;
 	children: React.ReactChild;
-	rest: any;
+	props?: any;
 }
 
 export default withStyles(style)(GridContainer);
