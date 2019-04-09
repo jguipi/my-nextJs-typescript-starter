@@ -1,8 +1,11 @@
-const NextI18Next = require('next-i18next');
+import NextI18Next from 'next-i18next';
 
-const options = {
-  browserLanguageDetection: true,
-  otherLanguages: ["fr"]
-};
+const NextI18NextInstance = new NextI18Next({
+  defaultLanguage: 'fr',
+  otherLanguages: ['en']
+});
 
-module.exports = new NextI18Next(options);
+export default NextI18NextInstance;
+
+/* Optionally, export class methods as named exports */
+export const {appWithTranslation, withNamespaces} = NextI18NextInstance;
