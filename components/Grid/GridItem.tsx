@@ -13,10 +13,10 @@ const style: any = {
 	}
 };
 
-function GridItem({ justify, alignItems, classes, children, className, ...rest }: Props) {
+function GridItem({ justify, alignItems, classes, className, ...props }: Props) {
 	return (
 		<Grid item justify={justify} alignItems={alignItems} {...rest} className={classes.grid + ' ' + className}>
-			{children}
+			{props.children}
 		</Grid>
 	);
 }
@@ -27,7 +27,7 @@ interface Props {
 	className?: string;
 	classes: any;
 	children: React.ReactChild;
-	rest: any;
+	props?: any;
 }
 
 export default withStyles(style)(GridItem);
